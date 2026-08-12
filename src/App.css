@@ -1,0 +1,260 @@
+
+*{
+   padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+}
+
+.body{
+   background-color: rgb(209, 181, 181);
+   height: 100vh;
+   padding: 30px;
+   background-image:url("./assets/Thiruvalluvar-image.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+   
+   /* display: flex; */
+   /* align-items: center; */
+   /* justify-content: center; */
+   /* flex-direction: column; */
+   
+}
+
+.header{
+   /* border:1px solid red; */
+   padding:10px;
+   width: 100%;
+   margin:10px;
+   height: 10%;
+}
+
+.title{
+    color:black;
+    text-align: center;
+    text-shadow: 0px 0px 5px skyblue;
+    filter: brightness(100%);
+}
+
+.card-box{
+    /* border:1px solid rgb(35, 162, 184); */
+   padding:10px;
+   width: 100%;
+   margin:10px;
+   height: 90%;
+   display: flex;
+    align-items: center;
+}
+
+.card{
+    padding: 30px;
+    border: 1px solid rgb(255, 255, 255,0.1);
+    background-color: rgb(159, 158, 158,0.2);
+    backdrop-filter: blur(10px);
+    width: 65%;
+    height: 80%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+   
+    gap: 30px;
+  
+}
+
+
+.searchbox{
+       /* border:1px solid rgb(21, 202, 208); */
+         width: 100%;
+         padding: 10px;
+         display: flex;
+         gap: 20px;
+}
+
+input{
+       border-radius: 10px;
+       height: 30px;
+       border:none;
+       padding-left: 10px;
+      
+}
+
+input:focus{
+    outline: none;
+   
+    border: 1px solid rgb(100, 177, 228);
+    box-shadow: 0px 0px 3px rgb(50, 49, 49);
+}
+
+
+.search-button{
+   padding: 5px;
+   border:none;
+   border-radius: 7px;
+   width: 60px;
+   color: white;
+   background-color: black;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+  
+}
+
+.search-button:active{
+    transform: scale(0.8);
+    box-shadow: 0px 0px 5px rgb(78, 77, 77);
+}
+
+.search-button:hover{
+    color: rgb(101, 203, 232);
+    box-shadow: 0px 0px 5px rgb(78, 77, 77);
+    
+}
+
+.kuralbox{
+
+      
+      width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+      
+}
+
+.next-button{
+      
+      width: 170px;
+        padding: 5px;
+        border:none;
+        border-radius: 7px;
+        font-size: 15px;
+        background-color: rgb(76, 76, 76);
+        color: white;
+        padding-bottom: 8px;
+        cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
+
+.next-button:active{
+       transform: scale(0.8);
+    box-shadow: 0px 0px 5px rgb(78, 77, 77);
+    
+}
+
+.next-button:hover{
+   color: rgb(101, 203, 232);
+    box-shadow: 0px 0px 5px rgb(78, 77, 77);
+    
+}
+h3{
+     margin-top: 20px;
+     margin-bottom: 5px;
+     text-shadow: 0px 0px 10px grey;
+     color: rgb(85, 55, 55);
+     
+
+}
+h2{
+     color: rgb(188, 188, 188);
+     font-size: 27px;
+     width: auto;
+}
+span{
+     border-bottom: 3px solid rgb(242, 241, 240);
+      padding-bottom: 10px;
+}
+
+.title{
+      color: rgb(0, 0, 0,0.8);
+      text-shadow: 0px 0px 20px rgb(218, 218, 218);
+       font-family: "Coiny", system-ui;
+  /* font-weight: 300; */
+  font-style: normal;
+    text-align: center;
+    font-weight: 1000;
+}
+
+p{
+    color: rgb(188, 188, 188);
+    width: 65%;
+}
+
+
+@media only screen and (max-width: 600px){
+
+     .title{
+        font-size: 27px;
+     }
+
+     .card{
+          width: 100%;
+          padding: 10px;
+          height: 240px;
+          margin-bottom: 10px;
+          
+     }
+
+     h2{
+         font-size: 11px;
+         width: 100%;
+     }
+
+     h3{
+        font-size: 11px;
+        margin-top: 15px;
+        text-shadow: 0px 0px 3px rgb(21, 21, 21);
+        color: beige;
+        
+     }
+
+     p{
+         width: 100%;
+         font-size: 10px;
+     }
+
+     input{
+
+         height: 25px;
+     }
+
+     .search-button{
+         font-size: 10px;
+         padding: 0px;
+     }
+
+     input::placeholder{
+         font-size: 10px;
+     }
+
+     .kuralbox{
+         height: 75%;
+         padding: 5px;
+         gap: 5px;
+     }
+
+     .next-button{
+          font-size: 10px;
+          width: 90px;
+          display: none;
+     }
+
+     .body{
+          padding: 10px;
+          background-image:url("./assets/thiru.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+     }
+
+     .card-box{
+         margin: 0px;
+         display: flex;
+         align-items: end;
+         
+     }
+     .header{
+         margin: 0px;
+         margin-top: 10px;
+     }
+}
