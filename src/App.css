@@ -216,7 +216,7 @@ p{
 
      input{
 
-         height: 25px;
+         height: 30px;
      }
 
      .search-button{
@@ -251,6 +251,7 @@ p{
          margin: 0px;
          display: flex;
          align-items: end;
+         height: 80%;
          
      }
      .header{
